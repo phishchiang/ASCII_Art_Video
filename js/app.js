@@ -253,7 +253,7 @@ export default class Sketch {
       fragmentShader: fragment_vid
     });
     this.mesh_vid = new THREE.Mesh(this.geometry_vid, this.material_vid);
-    this.mesh_vid.position.set( -this.cellSize/2, this.cellSize/2, 0);
+    this.mesh_vid.position.set( -this.cellSize/2, this.cellSize/2, 0.001);
     console.log(this.mesh_vid);
     
     this.scene.add(this.mesh_vid);
